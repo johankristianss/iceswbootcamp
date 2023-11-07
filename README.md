@@ -1,13 +1,17 @@
 # Introduction
 
+![CPU Exectime](img/cpu_exectime.png)
+
 ![Matmul](img/matmul.png)
 
-## Memory requirements
+## Matrix memory footprint
 Let assume the matrix size is 20000 elements, then 
 20000 × 20000 × 4 = 16000000 bytes = 1.49 GiB
 is needed to store one matrix.
 
 For all matrices, 1.49 X 3 = 4.47 GiB is needed.
+
+The Nvidia 2080 Ti GPU has exactly 11 GiB. 
 
 ```python
 import tensorflow as tf
