@@ -1,17 +1,9 @@
 # Introduction
-
+In this assignment you are going to investiage how much faster a GPU is compared to a CPU? The goal is to produce
+a figure below 
 ![CPU Exectime](img/cpu_exectime.png)
 
 ![Matmul](img/matmul.png)
-
-## Matrix memory footprint
-Let assume the matrix size is 20000 elements, then 
-20000 × 20000 × 4 = 16000000 bytes = 1.49 GiB
-is needed to store one matrix.
-
-For all matrices, 1.49 X 3 = 4.47 GiB is needed.
-
-The Nvidia 2080 Ti GPU has exactly 11 GiB. 
 
 ```python
 import tensorflow as tf
@@ -47,3 +39,12 @@ else:
     print("No GPU found. Please ensure TensorFlow is setup with GPU support.")
 ```
 GPU time: 0.3933844566345215
+
+## Matrix memory footprint
+Let assume the matrix size is 20000 elements, then 
+20000 × 20000 × 4 = 16000000 bytes = 1.49 GiB
+is needed to store one matrix.
+
+For all matrices, 1.49 X 3 = 4.47 GiB is needed.
+
+The Nvidia 2080 Ti GPU has exactly 11 GiB. What is the maximum matrix dimension we can calculate using a Nvidia 2080 Ti GPU?
