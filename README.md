@@ -2,14 +2,20 @@
 
 ![Matmul](img/matmul.png)
 
+## Memory requirements
+Let assume the matrix size is 20000 elements, then 
+20000 × 20000 × 4 = 16000000 bytes = 1.49 GiB
+is needed to store one matrix.
+
+For all matrices, 1.49 X 3 = 4.47 GiB is needed.
+
 ```python
 import tensorflow as tf
 import time
 ```
 
 ```python
-# Define two large random matrices
-size = 10000  # This size should be large enough to see significant computation time.
+size = 10000
 A = tf.random.normal([size, size])
 B = tf.random.normal([size, size])
 ```
