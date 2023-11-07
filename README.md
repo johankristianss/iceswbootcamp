@@ -27,7 +27,7 @@ A = tf.random.normal([size, size])
 B = tf.random.normal([size, size])
 ```
 
-To p
+The following code to calculate A x B.
 ```python
 with tf.device('/CPU:0'):
     start_time = time.time()
@@ -62,7 +62,7 @@ else:
 ```
 
 ## Hint 1: Python code structure 
-Develop a Python function that perform the multiplication
+Develop a Python function that perform the multiplication, e.g:
 
 ```python
 def measure_time(size, device):
