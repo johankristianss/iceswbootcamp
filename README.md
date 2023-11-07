@@ -19,7 +19,7 @@ import tensorflow as tf
 import time
 ```
 
-We need to are going to generate two matrices containing random data. In the example below, the size of the matrices is 5 X 5, containing 25 *float32* values.
+We are going to generate two matrices containing random data. In the example below, the size of the matrices is 5 X 5, containing 25 *float32* values.
 
 ```python
 size = 5
